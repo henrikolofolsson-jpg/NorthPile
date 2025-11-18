@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galleri – NorthPile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Bildgalleri med exempel från NorthPiles projekt inom borrning, spont, smide och grundförstärkning."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <div class="nav-left">
+        <div class="logo">North<span>Pile</span></div>
+        <div class="tagline">Grundläggning, mätning & riskkontroll</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Start</a>
+        <a href="tjanster.html">Tjänster</a>
+        <a href="galleri.html" class="active">Galleri</a>
+        <a href="index.html#kontakt">Kontakt</a>
+        <a class="nav-cta" href="mailto:henrik.olof.olsson@protechconsult.se">Boka möte</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1 class="hero-title">Galleri</h1>
+      <p class="section-sub">
+        Här kan du lägga upp bilder från projekt – borriggar, spont, smideslösningar, mätutrustning m.m.
+        Lägg bara till fler bilder i mappen <code>images/</code> i GitHub och uppdatera listan nedan.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- Exempelbilder – byt filnamnen till dina egna -->
+        <figure class="gallery-item">
+          <img src="images/borrning-1.jpg" alt="Borrigg vid grundläggningsarbete" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/spont-1.jpg" alt="Spontkonstruktion vid djup schakt" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/smide-1.jpg" alt="Smidesarbete kopplat till grundläggning" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/grundforstarkning-1.jpg" alt="Grundförstärkning på befintlig konstruktion" />
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="year"></span> NorthPile / Protech Consult AB.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
