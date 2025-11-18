@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Flikar på tjanster-sidan
+  // Flikar (tjänster)
   const tabButtons = document.querySelectorAll("[data-tab-target]");
   const tabPanels = document.querySelectorAll("[data-tab-panel]");
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Sätt år i footer
+  // År i footer
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
