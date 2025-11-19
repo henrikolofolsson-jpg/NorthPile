@@ -8,42 +8,20 @@
     name="description"
     content="NorthPile utför borrning, spont, smide och grundförstärkning för bygg- och anläggningsprojekt. Vi arbetar i svåra markförhållanden med fokus på säker och kontrollerad grundläggning."
   />
-  <meta
-    name="keywords"
-    content="borrning, stålrörspålar, spont, rörspont, smide, grundförstärkning, grundläggning, NorthPile"
-  />
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Enkel schema.org för SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "NorthPile",
-    "url": "https://northpile.se",
-    "email": "mailto:henrik@northpile.se",
-    "telephone": "+46-70-885-55-79",
-    "description": "NorthPile utför borrning, spont, smide och grundförstärkning för bygg- och anläggningsprojekt.",
-    "areaServed": "Sweden"
-  }
-  </script>
 </head>
-<body id="top">
-  <!-- HEADER -->
+<body>
   <header class="header">
     <div class="nav">
       <div class="nav-left">
-        <!-- Här kan du byta till din riktiga logotyp som <img> -->
-        <div>
-          <div class="logo-text">NORTHPILE</div>
-          <div class="logo-sub">Grundläggning & borrning</div>
-        </div>
+        <a href="index.html" class="logo-link">
+          <img src="images/logo-northpile.png" alt="NorthPile" class="site-logo" />
+        </a>
       </div>
       <nav class="nav-links" aria-label="Huvudnavigation">
-        <a href="#top" class="active">Hem</a>
-        <a href="#tjanster">Tjänster</a>
-        <a href="#referenser">Projektbilder</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="index.html" class="active">Hem</a>
+        <a href="tjanster.html">Tjänster</a>
+        <a href="kontakt.html">Kontakt</a>
         <a class="nav-cta" href="mailto:henrik@northpile.se">henrik@northpile.se</a>
       </nav>
     </div>
@@ -51,246 +29,83 @@
 
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-inner">
-      <div class="hero-kicker">Grundläggning i svåra markförhållanden</div>
-      <h1 id="hero-title" class="hero-title">
-        Borrning, spont och grundförstärkning med kontroll på omgivningen
-      </h1>
-      <p class="hero-sub">
-        NorthPile hjälper entreprenörer och beställare med borrning, spont, smide och grundförstärkning.
-        Vi är som mest nytta där marken är besvärlig, omgivningen känslig och tidplanen pressad.
-      </p>
-      <div class="hero-actions">
-        <a href="#tjanster" class="hero-link">
-          Våra tjänster <span class="arrow">→</span>
-        </a>
-        <a href="#kontakt" class="hero-secondary-link">
-          Kontakta oss <span class="arrow">→</span>
-        </a>
+    <div class="hero__wrap">
+      <div class="hero__image">
+        <img src="images/hero-borrning.jpg" alt="Borrigg vid grundläggningsarbete" />
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <div class="hero__kicker">Grundläggning i svåra lägen</div>
+        <h1 id="hero-title" class="hero__title">
+          Borrning, spont och grundförstärkning med kontroll på omgivningen
+        </h1>
+        <p class="hero__text">
+          NorthPile hjälper entreprenörer och beställare med borrning, spont, smide och grundförstärkning.
+          Vi är som mest nytta där marken är besvärlig, omgivningen känslig och tidplanen pressad.
+        </p>
+        <div class="hero__actions">
+          <a href="tjanster.html" class="hero-link">Våra tjänster <span class="arrow">→</span></a>
+          <a href="kontakt.html" class="hero-secondary-link">Kontakta oss <span class="arrow">→</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <main>
-    <!-- KORT ÖVERSIKT -->
-    <section class="section" aria-labelledby="overview-title">
-      <h2 id="overview-title" class="section-title">Vad vi gör</h2>
+  <main class="page">
+    <section class="section">
+      <h2 class="section-title">Vad vi gör</h2>
       <p class="section-sub">
         Vi utför grundläggningsarbeten med fokus på borrning och relaterade metoder. Våra uppdrag sträcker
         sig från mindre projekt till större infrastruktur och bostadsproduktion.
       </p>
 
-      <article class="service-block">
-        <div>
-          <h3 class="service-title">Grundläggning med borrning som huvudmetod</h3>
-          <div class="service-text">
-            <p>
-              Borrning är vår kärnverksamhet. Metoden passar särskilt bra i svåra markförhållanden som
-              fyllnadsmaterial, blockig mark och där det finns risk för släntras. Jämfört med traditionell
-              slagning ger borrning mindre vibrationer och massundanträngning – en fördel i tätbebyggda områden.
-            </p>
-            <p>
-              Vi kombinerar rätt maskin med erfarna operatörer och genomarbetade arbetsmetoder. Det gör att vi kan
-              leverera hög precision, även vid stora punktlaster och komplexa konstruktioner.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="service-side-title">Typiska uppdrag</div>
-          <ul class="service-list">
-            <li>Nyproduktion av bostäder och lokaler</li>
-            <li>Infrastruktur, ledningsarbeten och stödmurar</li>
-            <li>Ombyggnation i känslig befintlig bebyggelse</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <!-- TJÄNSTER I DETALJ -->
-    <section class="section" id="tjanster" aria-labelledby="services-title">
-      <h2 id="services-title" class="section-title">Tjänster</h2>
-      <p class="section-sub">
-        Här kan du läsa mer om våra huvudområden: borrning, spont, smide och grundförstärkning.
-      </p>
-
-      <!-- Borrning -->
-      <article class="service-block" id="borrning">
-        <div>
-          <h3 class="service-title">Borrning</h3>
-          <div class="service-text">
-            <p>
-              Borrning är en grundläggningsmetod som lämpar sig väl i svårare markförhållanden – till exempel
-              fyllnadsmaterial, blockrik mark eller där det finns risk för släntproblem.
-            </p>
-            <p>
-              Genom att borra i stället för att slå pålar minskar vi omgivningspåverkan i form av vibrationer och
-              massundanträngning. Det är en stor fördel i områden med känslig bebyggelse eller teknisk infrastruktur.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="service-side-title">Tjänster inom borrning</div>
-          <ul class="service-list">
-            <li>Borrade stålrörspålar (dim. RD115–711 mm)</li>
-            <li>Foderrörsborrning (dim. RD115–711 mm)</li>
-            <li>Bergborrning (dim. 90–600 mm)</li>
-            <li>Stagborrning och stagspänning</li>
-            <li>Dubborrning</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Spont -->
-      <article class="service-block" id="spont">
-        <div>
-          <h3 class="service-title">Spont</h3>
-          <div class="service-text">
-            <p>
-              Spont är en stödkonstruktion som används för att säkra jordmassor från ras och glidning, till exempel vid
-              djupa schakter eller större nivåskillnader. Konstruktionen förstärks vanligtvis med hammarband och stämp
-              eller förankringsstag.
-            </p>
-            <p>
-              Konventionell spont (slagen eller vibrerad) är den vanligaste metoden. När markförhållandena inte medger
-              detta använder vi borrade lösningar som rörspont och rörvägg, som fungerar bra även i mer svårhanterliga
-              jordlager.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="service-side-title">Tjänster inom spont</div>
-          <ul class="service-list">
-            <li>Slagen / vibrerad spont</li>
-            <li>Borrad rörspont</li>
-            <li>Borrad rörvägg (RD-vägg)</li>
-            <li>Stagborrning och förankringsstag</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Smide -->
-      <article class="service-block" id="smide">
-        <div>
-          <h3 class="service-title">Smide</h3>
-          <div class="service-text">
-            <p>
-              Vi har certifierade smeder för svetsningsarbeten kopplade till grundläggning – från stumsvets till mer
-              avancerade specialdetaljer. Vi kan ta totalansvar för konstruktioner som kräver smidesarbeten eller bidra
-              med resurser till befintliga projekt.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="service-side-title">Tjänster inom smide</div>
-          <ul class="service-list">
-            <li>Certifierade svetsare för kärl- och stumsvets</li>
-            <li>Smidesarbeten kopplade till grundläggning och spont</li>
-            <li>Specialanpassade detaljer och förstärkningar</li>
-            <li>Helhetslösningar från ritning till färdig konstruktion</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Grundförstärkning -->
-      <article class="service-block" id="grundforstarkning">
-        <div>
-          <h3 class="service-title">Grundförstärkning</h3>
-          <div class="service-text">
-            <p>
-              När befintliga konstruktioner ska byggas om, belastas mer eller visar tecken på sättning krävs
-              grundförstärkning. Vi kombinerar borrade lösningar, smide och spont för att skapa förstärkningar som
-              fungerar i verkligheten – inte bara på ritningen.
-            </p>
-            <p>
-              Fokus är att minimera störningar för boende och verksamhet, samtidigt som vi skapar en robust lösning som
-              klarar framtida laster och förändrade markförhållanden.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="service-side-title">Exempel på åtgärder</div>
-          <ul class="service-list">
-            <li>Kompletterande pålar och förstärkning av befintliga grundkonstruktioner</li>
-            <li>Förstärkning med borrade stålrörspålar och stag</li>
-            <li>Stålkonstruktioner och balksystem för lastomfördelning</li>
-            <li>Samordning med övriga discipliner på plats</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <!-- PROJEKTBILDER -->
-    <section class="section" id="referenser" aria-labelledby="gallery-title">
-      <h2 id="gallery-title" class="section-title">Projektbilder</h2>
-      <p class="section-sub">
-        Några exempel på miljöer där vi trivs bäst – trånga lägen, svåra markförhållanden och höga krav på precision.
-        Byt ut bilderna nedan mot egna foton från dina projekt.
-      </p>
-
-      <div class="gallery-grid">
-        <figure class="gallery-item">
-          <img src="images/borrning-1.jpg" alt="Borrigg vid grundläggningsarbete" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="images/spont-1.jpg" alt="Spontkonstruktion vid djup schakt" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="images/smide-1.jpg" alt="Smidesarbete vid grundläggningsprojekt" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="images/grundforstarkning-1.jpg" alt="Grundförstärkning av befintlig byggnad" />
-        </figure>
-      </div>
-    </section>
-
-    <!-- OM NORTHPILE / TEXT + BILD -->
-    <section class="section" aria-labelledby="about-title">
-      <h2 id="about-title" class="section-title">Om NorthPile</h2>
-      <div class="about-layout">
-        <div class="about-text">
+      <div class="intro-blocks">
+        <article class="intro-card">
+          <h3>Borrning & grundläggning</h3>
           <p>
-            NorthPile grundades med målsättningen att kombinera tung praktisk grundläggningserfarenhet med tydlig
-            kommunikation och hög kvalitet i varje uppdrag. Vi är en liten, flexibel aktör som kan fatta beslut nära
-            produktionen och snabbt anpassa oss efter projektets förutsättningar.
-          </p>
-          <p>
-            Vi tror på raka besked, tydliga offerter och transparent uppföljning. Det gör samarbetet enklare – både för
-            platsledning, beställare och andra entreprenörer.
-          </p>
-        </div>
-        <figure class="about-image">
-          <img src="images/about-1.jpg" alt="Arbetslag i diskussion vid grundläggningsarbete" />
-        </figure>
-      </div>
-    </section>
-
-    <!-- KONTAKT -->
-    <section class="section" id="kontakt" aria-labelledby="contact-title">
-      <h2 id="contact-title" class="section-title">Kontakt</h2>
-      <p class="section-sub">
-        Hör av dig med en kort beskrivning av projektet, så återkommer vi med ett förslag på upplägg och omfattning.
-      </p>
-
-      <div class="contact-grid">
-        <article class="contact-card">
-          <h3>Kontaktperson</h3>
-          <p>
-            <strong>Henrik Olsson</strong><br />
-            Telefon:
-            <a href="tel:+46708855579">070-885 55 79</a><br />
-            E-post:
-            <a href="mailto:henrik@northpile.se">henrik@northpile.se</a>
+            Borrade stålrörspålar, bergborrning och stagborrning i fyllnadsmassor, blockig terräng och andra tuffa
+            markförhållanden där precision och låg omgivningspåverkan är avgörande.
           </p>
         </article>
 
-        <article class="contact-card">
-          <h3>Så jobbar vi</h3>
+        <article class="intro-card">
+          <h3>Spont & stödkonstruktioner</h3>
           <p>
-            Vi prioriterar säker etablering, tydliga metoder och dokumenterad kvalitet. I projekt med många aktörer
-            är vår roll att se till att grundläggningen och omgivningspåverkan är under kontroll – från första borrhål
-            till sista dokumentation.
+            Slagen/vibrerad spont och borrade rörlösningar för schakter, slänter och nivåskillnader – även där
+            traditionell spont inte är möjlig att installera.
           </p>
         </article>
+
+        <article class="intro-card">
+          <h3>Smide & grundförstärkning</h3>
+          <p>
+            Certifierat smide, förstärkning av befintliga konstruktioner och lösningar för ökade laster i känslig
+            bebyggelse.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Varför NorthPile?</h2>
+      <div class="about-row">
+        <div class="about-row__text">
+          <p>
+            Vi kombinerar praktisk erfarenhet från grundläggningsmaskiner med tydlig kommunikation mot
+            platsledning och beställare. Det gör att vi kan ta ansvar för både utförande och dialog
+            kring omgivningspåverkan.
+          </p>
+          <p>
+            Vår styrka ligger i projekt där markförhållanden är komplicerade och det behövs en aktör som förstår
+            både tekniken och verkligheten på plats.
+          </p>
+          <p>
+            Vill du diskutera ett kommande projekt? <a href="kontakt.html">Kontakta oss här.</a>
+          </p>
+        </div>
+        <figure class="about-row__image">
+          <img src="images/about-1.jpg" alt="Arbetslag vid grundläggningsarbete" />
+        </figure>
       </div>
     </section>
   </main>
