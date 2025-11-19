@@ -2,212 +2,229 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <title>NorthPile – Grundläggning, borrning, spont & mätning</title>
+  <title>NorthPile – Borrning, spont, smide & grundförstärkning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="NorthPile hjälper beställare och entreprenörer med borrning, spont, smide, grundförstärkning samt vibrations- och bullermätningar."
+    content="NorthPile utför borrning, spont, smide och grundförstärkning för bygg- och anläggningsprojekt. Vi arbetar i svåra markförhållanden med fokus på säker och kontrollerad grundläggning."
+  />
+  <meta
+    name="keywords"
+    content="borrning, stålrörspålar, spont, rörspont, smide, grundförstärkning, grundläggning, NorthPile"
   />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Enkel schema.org för SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "NorthPile",
+    "url": "https://northpile.se",
+    "email": "mailto:henrik@northpile.se",
+    "telephone": "+46-70-885-55-79",
+    "description": "NorthPile utför borrning, spont, smide och grundförstärkning för bygg- och anläggningsprojekt.",
+    "areaServed": "Sweden"
+  }
+  </script>
 </head>
 <body id="top">
+  <!-- HEADER -->
   <header class="header">
     <div class="nav">
       <div class="nav-left">
-        <div class="logo">North<span>Pile</span></div>
-        <div class="tagline">Grundläggning, borrning & omgivningspåverkan</div>
+        <!-- Här kan du byta till din riktiga logotyp som <img> -->
+        <div>
+          <div class="logo-text">NORTHPILE</div>
+          <div class="logo-sub">Grundläggning & borrning</div>
+        </div>
       </div>
-      <div class="nav-links">
+      <nav class="nav-links" aria-label="Huvudnavigation">
         <a href="#top" class="active">Hem</a>
         <a href="#tjanster">Tjänster</a>
         <a href="#referenser">Projektbilder</a>
         <a href="#kontakt">Kontakt</a>
-        <a class="nav-cta" href="mailto:henrik@northpile.se">Maila oss</a>
-      </div>
+        <a class="nav-cta" href="mailto:henrik@northpile.se">henrik@northpile.se</a>
+      </nav>
     </div>
   </header>
 
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div class="hero-kicker">Grundläggning i svåra markförhållanden</div>
+      <h1 id="hero-title" class="hero-title">
+        Borrning, spont och grundförstärkning med kontroll på omgivningen
+      </h1>
+      <p class="hero-sub">
+        NorthPile hjälper entreprenörer och beställare med borrning, spont, smide och grundförstärkning.
+        Vi är som mest nytta där marken är besvärlig, omgivningen känslig och tidplanen pressad.
+      </p>
+      <div class="hero-actions">
+        <a href="#tjanster" class="hero-link">
+          Våra tjänster <span class="arrow">→</span>
+        </a>
+        <a href="#kontakt" class="hero-secondary-link">
+          Kontakta oss <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <!-- HERO -->
-    <section class="section hero">
-      <div>
-        <h1 class="hero-title">Kontrollerad grundläggning i svåra lägen</h1>
-        <p class="hero-sub">
-          NorthPile är din partner för borrning, spont, smide, grundförstärkning och mätning av
-          vibrationer och buller. Vi hjälper dig att hantera riskerna – så att produktionen kan rulla på
-          utan onödiga överraskningar.
-        </p>
-
-        <div class="hero-badges">
-          <div class="badge"><strong>Borrning</strong> & stålrörspålar</div>
-          <div class="badge">Spont & stödkonstruktioner</div>
-          <div class="badge">Smide & grundförstärkning</div>
-          <div class="badge">Vibrations- & bullermätning</div>
-        </div>
-
-        <div class="hero-highlight">
-          <strong>Mindre risk, mer kontroll.</strong> Vi kombinerar tung praktisk grundläggningserfarenhet
-          med mätning och tydlig dokumentation – från riskanalys till färdiga protokoll.
-        </div>
-
-        <div class="hero-cta-row">
-          <a href="#tjanster" class="btn btn-primary">Se våra tjänster</a>
-          <a href="#kontakt" class="btn btn-ghost">Prata om ditt projekt</a>
-          <div class="hero-meta">Vi svarar normalt samma arbetsdag.</div>
-        </div>
-      </div>
-
-      <aside class="hero-image-card">
-        <div class="hero-image-wrapper">
-          <!-- Byt filnamn till en av dina egna bilder -->
-          <img src="images/hero-borrning.jpg" alt="Borrigg vid grundläggning" />
-        </div>
-        <div class="hero-image-caption">
-          Exempel på borrning i komplexa markförhållanden. Lägg in din egen bild här via mappen
-          <code>images/</code> i GitHub.
-        </div>
-      </aside>
-    </section>
-
-    <!-- ÖVERGRIPANDE Tjänster (kort) -->
-    <section class="section">
-      <h2 class="section-title">Vad vi hjälper dig med</h2>
+    <!-- KORT ÖVERSIKT -->
+    <section class="section" aria-labelledby="overview-title">
+      <h2 id="overview-title" class="section-title">Vad vi gör</h2>
       <p class="section-sub">
-        Vi är som mest nytta där marken är besvärlig, omgivningen känslig och marginalerna små. Nedan ser du våra
-        huvudområden – längre ner hittar du mer detaljerade beskrivningar i respektive flik.
+        Vi utför grundläggningsarbeten med fokus på borrning och relaterade metoder. Våra uppdrag sträcker
+        sig från mindre projekt till större infrastruktur och bostadsproduktion.
       </p>
 
-      <div class="grid-3">
-        <article class="card">
-          <h3>Borrning & grundläggning</h3>
-          <p>
-            Borrade stålrörspålar, bergborrning och stagborrning i fyllnadsmassor, blockig terräng och andra tuffa
-            markförhållanden där precision och låg omgivningspåverkan är avgörande.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Spont & stödkonstruktioner</h3>
-          <p>
-            Slagen/vibrerad spont och borrade rörlösningar för schakter, slänter och nivåskillnader – även där
-            traditionell spont inte är möjlig att installera.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Smide, förstärkning & mätning</h3>
-          <p>
-            Certifierat smide, grundförstärkning och uppföljning med vibrations- och bullermätningar, inklusive
-            tydliga rapporter till beställare och närboende.
-          </p>
-        </article>
-      </div>
+      <article class="service-block">
+        <div>
+          <h3 class="service-title">Grundläggning med borrning som huvudmetod</h3>
+          <div class="service-text">
+            <p>
+              Borrning är vår kärnverksamhet. Metoden passar särskilt bra i svåra markförhållanden som
+              fyllnadsmaterial, blockig mark och där det finns risk för släntras. Jämfört med traditionell
+              slagning ger borrning mindre vibrationer och massundanträngning – en fördel i tätbebyggda områden.
+            </p>
+            <p>
+              Vi kombinerar rätt maskin med erfarna operatörer och genomarbetade arbetsmetoder. Det gör att vi kan
+              leverera hög precision, även vid stora punktlaster och komplexa konstruktioner.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="service-side-title">Typiska uppdrag</div>
+          <ul class="service-list">
+            <li>Nyproduktion av bostäder och lokaler</li>
+            <li>Infrastruktur, ledningsarbeten och stödmurar</li>
+            <li>Ombyggnation i känslig befintlig bebyggelse</li>
+          </ul>
+        </div>
+      </article>
     </section>
 
-    <!-- Tjänster med flikar -->
-    <section class="section" id="tjanster">
-      <h2 class="section-title">Tjänster i detalj</h2>
+    <!-- TJÄNSTER I DETALJ -->
+    <section class="section" id="tjanster" aria-labelledby="services-title">
+      <h2 id="services-title" class="section-title">Tjänster</h2>
       <p class="section-sub">
-        Välj område för att läsa mer om hur vi jobbar och vilka typer av arbeten vi utför.
+        Här kan du läsa mer om våra huvudområden: borrning, spont, smide och grundförstärkning.
       </p>
 
-      <div class="tabs">
-        <button class="tab-btn active" data-tab-target="borrning">Borrning</button>
-        <button class="tab-btn" data-tab-target="spont">Spont</button>
-        <button class="tab-btn" data-tab-target="smide">Smide</button>
-        <button class="tab-btn" data-tab-target="grund">Grundförstärkning</button>
-      </div>
-
-      <!-- BORRNING -->
-      <article class="tab-panel active" data-tab-panel="borrning">
-        <h2>Borrning</h2>
-        <p>
-          Borrning är en flexibel grundläggningsmetod som lämpar sig särskilt väl i svårare markförhållanden – till
-          exempel fyllnadsmassor, blockrik mark eller där det finns risk för släntproblem. Metoden ger mindre
-          omgivningspåverkan i form av vibrationer och massundanträngning än traditionell slagning av pålar, vilket gör
-          borrning extra lämplig i tätbebyggda och känsliga miljöer.
-        </p>
-        <p>
-          Med rätt maskin, utrustning och erfaren operatör kan borrning utföras med mycket hög precision och är därför
-          ett utmärkt val för konstruktioner med stora punktlaster och höga krav på noggrannhet.
-        </p>
-        <h3>Tjänster inom borrning</h3>
-        <ul>
-          <li>Borrade stålrörspålar (dim. RD115–711 mm)</li>
-          <li>Foderrörsborrning (dim. RD115–711 mm)</li>
-          <li>Bergborrning (dim. 90–600 mm)</li>
-          <li>Stagborrning och stagspänning</li>
-          <li>Dubborrning</li>
-        </ul>
+      <!-- Borrning -->
+      <article class="service-block" id="borrning">
+        <div>
+          <h3 class="service-title">Borrning</h3>
+          <div class="service-text">
+            <p>
+              Borrning är en grundläggningsmetod som lämpar sig väl i svårare markförhållanden – till exempel
+              fyllnadsmaterial, blockrik mark eller där det finns risk för släntproblem.
+            </p>
+            <p>
+              Genom att borra i stället för att slå pålar minskar vi omgivningspåverkan i form av vibrationer och
+              massundanträngning. Det är en stor fördel i områden med känslig bebyggelse eller teknisk infrastruktur.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="service-side-title">Tjänster inom borrning</div>
+          <ul class="service-list">
+            <li>Borrade stålrörspålar (dim. RD115–711 mm)</li>
+            <li>Foderrörsborrning (dim. RD115–711 mm)</li>
+            <li>Bergborrning (dim. 90–600 mm)</li>
+            <li>Stagborrning och stagspänning</li>
+            <li>Dubborrning</li>
+          </ul>
+        </div>
       </article>
 
-      <!-- SPONT -->
-      <article class="tab-panel" data-tab-panel="spont">
-        <h2>Spont</h2>
-        <p>
-          Spont är en stödkonstruktion som används för att säkra jordmassor mot ras och glidning – till exempel vid
-          djupa schakter, slänter eller andra nivåskillnader. Sponten kompletteras ofta med hammarband samt stämp eller
-          förankringsstag för att ta upp laster och skapa en trygg och stabil konstruktion.
-        </p>
-        <p>
-          Konventionell spont (slagen eller vibrerad) är den vanligaste metoden och kan utföras som en tät konstruktion
-          när grundvatten och omgivande mark måste hållas tillbaka. När markförhållandena inte medger konventionell
-          spont används i stället borrade lösningar, såsom rörspont och rörvägg.
-        </p>
-        <h3>Tjänster inom spont</h3>
-        <ul>
-          <li>Slagen / vibrerad spont</li>
-          <li>Borrad rörspont</li>
-          <li>Borrad rörvägg (RD-vägg)</li>
-          <li>Stagborrning och förankringsstag</li>
-        </ul>
+      <!-- Spont -->
+      <article class="service-block" id="spont">
+        <div>
+          <h3 class="service-title">Spont</h3>
+          <div class="service-text">
+            <p>
+              Spont är en stödkonstruktion som används för att säkra jordmassor från ras och glidning, till exempel vid
+              djupa schakter eller större nivåskillnader. Konstruktionen förstärks vanligtvis med hammarband och stämp
+              eller förankringsstag.
+            </p>
+            <p>
+              Konventionell spont (slagen eller vibrerad) är den vanligaste metoden. När markförhållandena inte medger
+              detta använder vi borrade lösningar som rörspont och rörvägg, som fungerar bra även i mer svårhanterliga
+              jordlager.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="service-side-title">Tjänster inom spont</div>
+          <ul class="service-list">
+            <li>Slagen / vibrerad spont</li>
+            <li>Borrad rörspont</li>
+            <li>Borrad rörvägg (RD-vägg)</li>
+            <li>Stagborrning och förankringsstag</li>
+          </ul>
+        </div>
       </article>
 
-      <!-- SMIDE -->
-      <article class="tab-panel" data-tab-panel="smide">
-        <h2>Smide</h2>
-        <p>
-          Vi har certifierade smeder för de flesta typer av svetsningsarbeten inom grundläggning – allt från stumsvets
-          till mer avancerade konstruktioner. Vi kan både ta ett helhetsansvar för konstruktioner som kräver smidesarbeten
-          och bistå med enbart smeder till dina projekt.
-        </p>
-        <h3>Tjänster inom smide</h3>
-        <ul>
-          <li>Certifierade svetsare för kärl- och stumsvets</li>
-          <li>Smidesarbeten kopplade till grundläggning och spont</li>
-          <li>Specialanpassade detaljer och förstärkningar</li>
-          <li>Helhetslösningar från ritning till färdig konstruktion</li>
-        </ul>
+      <!-- Smide -->
+      <article class="service-block" id="smide">
+        <div>
+          <h3 class="service-title">Smide</h3>
+          <div class="service-text">
+            <p>
+              Vi har certifierade smeder för svetsningsarbeten kopplade till grundläggning – från stumsvets till mer
+              avancerade specialdetaljer. Vi kan ta totalansvar för konstruktioner som kräver smidesarbeten eller bidra
+              med resurser till befintliga projekt.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="service-side-title">Tjänster inom smide</div>
+          <ul class="service-list">
+            <li>Certifierade svetsare för kärl- och stumsvets</li>
+            <li>Smidesarbeten kopplade till grundläggning och spont</li>
+            <li>Specialanpassade detaljer och förstärkningar</li>
+            <li>Helhetslösningar från ritning till färdig konstruktion</li>
+          </ul>
+        </div>
       </article>
 
-      <!-- GRUNDFÖRSTÄRKNING -->
-      <article class="tab-panel" data-tab-panel="grund">
-        <h2>Grundförstärkning</h2>
-        <p>
-          När befintliga konstruktioner ska byggas om, belastas mer eller visar tecken på sättningar behövs ofta
-          grundförstärkning. Vi kombinerar borrade lösningar, smide och spont för att skapa förstärkningar som fungerar
-          i verkligheten – inte bara på ritningen.
-        </p>
-        <p>
-          Fokus ligger på att minimera störningar för verksamhet och boende, samtidigt som vi skapar en robust lösning
-          som tål framtida laster och förändrade markförhållanden.
-        </p>
-        <h3>Exempel på åtgärder</h3>
-        <ul>
-          <li>Kompletterande pålar och förstärkning av befintliga grundkonstruktioner</li>
-          <li>Förstärkning med borrade stålrörspålar och stag</li>
-          <li>Stålkonstruktioner och balksystem för lastomfördelning</li>
-          <li>Samordning med övriga discipliner på plats</li>
-        </ul>
+      <!-- Grundförstärkning -->
+      <article class="service-block" id="grundforstarkning">
+        <div>
+          <h3 class="service-title">Grundförstärkning</h3>
+          <div class="service-text">
+            <p>
+              När befintliga konstruktioner ska byggas om, belastas mer eller visar tecken på sättning krävs
+              grundförstärkning. Vi kombinerar borrade lösningar, smide och spont för att skapa förstärkningar som
+              fungerar i verkligheten – inte bara på ritningen.
+            </p>
+            <p>
+              Fokus är att minimera störningar för boende och verksamhet, samtidigt som vi skapar en robust lösning som
+              klarar framtida laster och förändrade markförhållanden.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="service-side-title">Exempel på åtgärder</div>
+          <ul class="service-list">
+            <li>Kompletterande pålar och förstärkning av befintliga grundkonstruktioner</li>
+            <li>Förstärkning med borrade stålrörspålar och stag</li>
+            <li>Stålkonstruktioner och balksystem för lastomfördelning</li>
+            <li>Samordning med övriga discipliner på plats</li>
+          </ul>
+        </div>
       </article>
     </section>
 
-    <!-- BILDSEKTION / PROJEKT -->
-    <section class="section" id="referenser">
-      <h2 class="section-title">Projektbilder</h2>
+    <!-- PROJEKTBILDER -->
+    <section class="section" id="referenser" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="section-title">Projektbilder</h2>
       <p class="section-sub">
-        Här kan du visa typiska jobb – borriggar, spont, smideslösningar och grundförstärkning. Byt bara ut
-        filnamnen mot dina egna bilder i mappen <code>images/</code>.
+        Några exempel på miljöer där vi trivs bäst – trånga lägen, svåra markförhållanden och höga krav på precision.
+        Byt ut bilderna nedan mot egna foton från dina projekt.
       </p>
 
       <div class="gallery-grid">
@@ -218,42 +235,62 @@
           <img src="images/spont-1.jpg" alt="Spontkonstruktion vid djup schakt" />
         </figure>
         <figure class="gallery-item">
-          <img src="images/smide-1.jpg" alt="Smidesarbete kopplat till grundläggning" />
+          <img src="images/smide-1.jpg" alt="Smidesarbete vid grundläggningsprojekt" />
         </figure>
         <figure class="gallery-item">
-          <img src="images/grundforstarkning-1.jpg" alt="Grundförstärkning på befintlig konstruktion" />
+          <img src="images/grundforstarkning-1.jpg" alt="Grundförstärkning av befintlig byggnad" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- OM NORTHPILE / TEXT + BILD -->
+    <section class="section" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">Om NorthPile</h2>
+      <div class="about-layout">
+        <div class="about-text">
+          <p>
+            NorthPile grundades med målsättningen att kombinera tung praktisk grundläggningserfarenhet med tydlig
+            kommunikation och hög kvalitet i varje uppdrag. Vi är en liten, flexibel aktör som kan fatta beslut nära
+            produktionen och snabbt anpassa oss efter projektets förutsättningar.
+          </p>
+          <p>
+            Vi tror på raka besked, tydliga offerter och transparent uppföljning. Det gör samarbetet enklare – både för
+            platsledning, beställare och andra entreprenörer.
+          </p>
+        </div>
+        <figure class="about-image">
+          <img src="images/about-1.jpg" alt="Arbetslag i diskussion vid grundläggningsarbete" />
         </figure>
       </div>
     </section>
 
     <!-- KONTAKT -->
-    <section class="section" id="kontakt">
-      <h2 class="section-title">Kontakt</h2>
+    <section class="section" id="kontakt" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Kontakt</h2>
       <p class="section-sub">
-        Skicka ett mejl eller ring så tar vi ett snabbt avstämningssamtal om ditt projekt och vad du behöver hjälp med.
+        Hör av dig med en kort beskrivning av projektet, så återkommer vi med ett förslag på upplägg och omfattning.
       </p>
 
       <div class="contact-grid">
-        <div class="contact-card">
-          <h3>NorthPile</h3>
+        <article class="contact-card">
+          <h3>Kontaktperson</h3>
           <p>
-            E-post:
-            <a href="mailto:henrik@northpile.se">henrik@northpile.se</a><br />
+            <strong>Henrik Olsson</strong><br />
             Telefon:
-            <a href="tel:+46708855579">070-885 55 79</a>
+            <a href="tel:+46708855579">070-885 55 79</a><br />
+            E-post:
+            <a href="mailto:henrik@northpile.se">henrik@northpile.se</a>
           </p>
-          <p>
-            Här kan vi lägga in postadress, organisationsnummer och andra uppgifter när du vill – strukturen är redan klar.
-          </p>
-        </div>
+        </article>
 
-        <div class="contact-card">
+        <article class="contact-card">
           <h3>Så jobbar vi</h3>
           <p>
-            Vi är raka, lösningsorienterade och vana vid projekt där tidplanen är pressad men kvalitetskraven är höga.
-            Målet är att du ska känna att grundläggningen och omgivningspåverkan är under kontroll – även i svåra lägen.
+            Vi prioriterar säker etablering, tydliga metoder och dokumenterad kvalitet. I projekt med många aktörer
+            är vår roll att se till att grundläggningen och omgivningspåverkan är under kontroll – från första borrhål
+            till sista dokumentation.
           </p>
-        </div>
+        </article>
       </div>
     </section>
   </main>
